@@ -1,0 +1,62 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+   <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+   
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head> 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>SignUp</title>
+</head>
+<body>
+								
+	<form:form action="registerme"  method="post">
+		<table align="center">
+			<tr>
+				<td>User ID:</td>
+				<td><input type="text" name="id" required></td>
+			</tr>
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" name="name" required></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" required></td>
+			</tr>
+			<tr>
+				<td>Mobile No:</td>
+				<td><input type="text" name="mobile" pattern="[789][0-9]{9}" required></td>
+			</tr>
+			
+			<tr>
+				<td>Mail ID:</td>
+				<td><input type="text" name="Mailid" required></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" width="20" height="10" name="address" required></td>
+			</tr>
+			
+
+			<tr>
+				<td><input type="submit" value="Register">
+				<td><input type="reset" value="Reset">
+			</tr>
+			
+		</table>
+
+	</form:form>
+
+</body>
+</html>
